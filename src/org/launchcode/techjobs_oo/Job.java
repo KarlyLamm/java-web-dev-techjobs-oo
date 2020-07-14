@@ -90,4 +90,17 @@ public class Job {
     public void setCoreCompetency(CoreCompetency coreCompetency) {
         this.coreCompetency = coreCompetency;
     }
+//    @Override
+//    public String toString(){
+//        // TODO: Do this as a HashMap later.
+//        String dna = "Data not available";
+//        return "\n" +
+//                "ID: "              + this.id             + "\n" +
+//                "Name: "            + ((this.name == null) ? dna : this.name)          + "\n" +
+//                "Employer: "        + ((this.employer == null) ? dna : this.employer)   + "\n" +
+//                "Location: "        + ((this.location == null) ? dna : this.location)   + "\n" +
+//                "Position Type: "   + ((this.positionType == null) ? dna : this.positionType)   + "\n" +
+//                "Core Competency: " + ((this.coreCompetency == null) ? dna : this.coreCompetency) + "\n";
+//    }
 }
+
