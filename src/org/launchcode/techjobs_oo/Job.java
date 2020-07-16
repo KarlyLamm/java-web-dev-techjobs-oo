@@ -1,5 +1,9 @@
 package org.launchcode.techjobs_oo.main;
 
+import org.launchcode.techjobs_oo.CoreCompetency;
+import org.launchcode.techjobs_oo.Employer;
+import org.launchcode.techjobs_oo.Location;
+
 import java.util.Objects;
 
 public class Job {
@@ -10,7 +14,7 @@ public class Job {
     private String name;
     private Employer employer;
     private Location location;
-    private PositionType positionType;
+    private org.launchcode.techjobs_oo.main.PositionType positionType;
     private CoreCompetency coreCompetency;
 
     public Job(){
@@ -18,7 +22,7 @@ public class Job {
         nextId++;
     }
 
-    public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
+    public Job(String name, Employer employer, Location location, org.launchcode.techjobs_oo.main.PositionType positionType, CoreCompetency coreCompetency) {
         this();
         this.name = name;
         this.employer = employer;
@@ -37,30 +41,19 @@ public class Job {
 
     @Override
     public String toString() {
-        if (name.equals("")){
-            name = "Data not available";
-        }
-        if (employer.getValue().equals("") || employer.getValue() == null){
-            employer.setValue("Data not available");
-        }
-        if (location.getValue().equals("") || location.getValue() == null){
-            location.setValue("Data not available");
-        }
-        if (coreCompetency.getValue().equals("") || coreCompetency.getValue() == null){
-            coreCompetency.setValue("Data not available");
-        }
-        if (positionType.getValue().equals("") || positionType.getValue() == null){
-            positionType.setValue("Data not available");
-        }
+        String jobString;
+        jobString =
+                "\n" +
+                        "ID:" + id + "\n" +
+                        "Name:" + name + "\n" +
+                        "Employer:" + employer + "\n" +
+                        "Location:" + location + "\n" +
+                        "Position Type:" + positionType + "\n" +
+                        "Core Competency:" + coreCompetency + "\n";
 
-        return "\nId: " + id +
-                "\nName: " + name +
-                "\nEmployer: " + employer +
-                "\nLocation: " + location +
-                "\nPositionType: " + positionType +
-                "\nCoreCompetency: " + coreCompetency +
-                '\n';
+        return jobString;
     }
+
 
     @Override
     public int hashCode() {
