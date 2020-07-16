@@ -96,7 +96,7 @@ public class Job {
         return positionType;
     }
 
-    public void setPositionType(PositionType positionType) {
+    public void setPositionType(org.launchcode.techjobs_oo.main.PositionType positionType) {
         this.positionType = positionType;
     }
 

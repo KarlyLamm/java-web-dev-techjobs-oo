@@ -43,10 +43,10 @@ public abstract class JobField {
     }
 
     @Override
-    public boolean equals(Object o) {  // Two objects are equal if they have the same id.
+    public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof JobField)) return false;
-        JobField job_field = (JobField) o;
-        return getId() == job_field.getId();
+        if (o == null || getClass() != o.getClass()) return false;
+        JobField jobField = (JobField) o;
+        return id == jobField.id;
     }
 }
