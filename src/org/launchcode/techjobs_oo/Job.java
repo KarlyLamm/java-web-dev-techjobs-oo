@@ -1,4 +1,4 @@
-package org.launchcode.techjobs_oo.main;
+package org.launchcode.techjobs_oo;
 
 import org.launchcode.techjobs_oo.CoreCompetency;
 import org.launchcode.techjobs_oo.Employer;

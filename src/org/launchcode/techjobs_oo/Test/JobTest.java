@@ -1,4 +1,4 @@
-package org.launchcode.techjobs_oo.Test;
+package org.launchcode.techjobs_oo;
 
 import org.launchcode.techjobs_oo.*;
 import org.junit.Test;
